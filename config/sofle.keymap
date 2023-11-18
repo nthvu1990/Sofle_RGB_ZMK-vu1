@@ -1644,7 +1644,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_FORWARD K_BACK>,
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
                 <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
@@ -1664,7 +1664,7 @@
                                   &trans        &trans        &trans        &trans        &kp TAB             &trans  &kp N0           &kp N0        &kp N0         &kp DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_FAST_FORWARD C_REWIND &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&tab_browser>, <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         raise_layer {
