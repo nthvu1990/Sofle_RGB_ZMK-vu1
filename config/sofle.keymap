@@ -1099,7 +1099,13 @@
         zoomin: zoomin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RCTRL &kp K_SCROLL_UP>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp K_SCROLL_UP>,
+                <&macro_release>,
+                <&kp RCTRL>;
 
             label = "ZOOMIN";
         };
@@ -1107,7 +1113,13 @@
         zoomout: zoomout {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp RCTRL &kp K_SCROLL_DOWN>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp K_SCROLL_DOWN>,
+                <&macro_release>,
+                <&kp RCTRL>;
 
             label = "ZOOMOUT";
         };
