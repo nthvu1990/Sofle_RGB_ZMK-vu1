@@ -1688,8 +1688,8 @@
 &td_btr          &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &rgb_ug RGB_HUI  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &rgb_ug RGB_EFF
 &rgb_ug RGB_BRI  &kp PSCRN        &kp INS       &kp UP        &kp AT        &kp PRCNT                                   &rgb_ug RGB_HUD  &kp N7        &kp N8         &kp N9           &kp KP_PLUS   &bt BT_CLR
 &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &kp LEFT      &kp DOWN      &kp RIGHT     &kp DLLR                                    &rgb_ug RGB_SAI  &kp N4        &kp N5         &kp N6           &kp KP_PLUS   &rgb_ug RGB_SPI
-&stm             &out OUT_TOG     &trans        &kp C_PREV    &kp C_NEXT    &kp HASH      &kp C_PLAY_PAUSE    &trans    &rgb_ug RGB_SAD  &kp N1        &kp N2         &kp N3           &kp KP_ENTER  &rgb_ug RGB_SPD
-                                  &trans        &trans        &trans        &trans        &kp TAB             &kp CAPS  &zoomin          &zoomout      &kp N0         &kp DOT
+&stm             &out OUT_TOG     &zoomoin        &kp C_PREV    &kp C_NEXT    &kp HASH      &kp C_PLAY_PAUSE    &trans    &rgb_ug RGB_SAD  &kp N1        &kp N2         &kp N3           &kp KP_ENTER  &rgb_ug RGB_SPD
+                                  &zoomout        &mkp MB4        &mkp MB5        &trans        &kp TAB             &kp CAPS  &trans          &zoomout      &kp N0         &kp DOT
             >;
 
             sensor-bindings = <&tab_browser>, <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -1709,7 +1709,7 @@
 &trans  &kp GRAVE  &kp TILDE  &td_lt       &td_gt    &kp QMARK                             &kp ASTRK  &kp LBRC  &kp RBRC  &kp HOME   &kp END   &trans
 &schwa  &kp EXCL   &kp AT     &kp HASH     &kp DLLR  &kp PRCNT                             &kp UNDER  &kp LPAR  &kp RPAR  &kp SEMI   &kp PIPE  &cc
 &trans  &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp AMPS  &kp PIPE   &rgb_ug RGB_TOG    &trans  &kp CARET  &kp LBKT  &kp RBKT  &kp COLON  &kp BSLH  &pwr
-                   &trans     &mkp MB4       &mkp MB5    &mo 3      &pscode            &trans  &trans     &trans    &trans    &trans
+                   &trans     &trans       &trans    &mo 3      &pscode            &trans  &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings = <&rgb_encoder &inc_dec_kp PG_UP PG_DN>;
