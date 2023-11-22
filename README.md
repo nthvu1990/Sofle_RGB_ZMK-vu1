@@ -5,7 +5,7 @@
 
 Shields: Sofle RGB v2.1 PCB
 
-Boards: nice!nano v2.0                      - Can work with NRF52480 (maybe this cause RGB not work)
+Boards: NRF52480
 
 Standoffs: 15MM
 
