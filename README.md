@@ -2,10 +2,9 @@
 
 72 LED Sofle RGB using ZMK 3.2              - Not WORK
 
-
 Shields: Sofle RGB v2.1 PCB
 
-Boards: NRF52480
+Boards: NRF52480         // nice!nano clone
 
 Standoffs: 15MM
 
@@ -15,6 +14,6 @@ OLED: 128X32 OLED Screen
 
 Switches: Macchiato
 
-Encoders: EC11
+Encoders: evqwgd001 with a little mod
 
 LEDS: SK6812MINI
