@@ -7,10 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/ext_power.h>
+
 //Encoder Support
 //Alps Alpine EC11N1524402: 30 Detent, 15PPR, 2 Channel, Quadrature, 15000 Cycle
 
@@ -1784,11 +1785,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &inv_exc  &degree   &lb_euro  &us_cent  &plus_min                    &trans    &trans    &trans   &trans    &trans     &trans
-&trans  &trans    &trans    &td_sp_e  &trans    &trans                       &trans    &td_sp_u  &fada_i  &td_sp_o  &trans     &trans
-&trans  &td_sp_a  &td_sp_s  &trans    &trans    &trans                       &trans    &trans    &trans   &dark_l   &trans     &trans
-&trans  &td_sp_z  &trans    &acute_c  &trans    &trans     &trans    &trans  &td_sp_n  &trans    &trans   &trans    &inv_ques  &trans
-                  &trans    &trans    &trans    &trans     &trans    &trans  &trans    &trans    &trans   &trans
+&ext_power EP_ON   &inv_exc  &degree   &lb_euro  &us_cent  &plus_min                    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
+&ext_power EP_OFF  &trans    &trans    &td_sp_e  &trans    &trans                       &trans         &td_sp_u       &fada_i        &td_sp_o       &trans         &trans
+&bt BT_DISC 0      &td_sp_a  &td_sp_s  &trans    &trans    &trans                       &trans         &trans         &trans         &dark_l        &trans         &trans
+&bt BT_DISC 1      &td_sp_z  &trans    &acute_c  &trans    &trans     &trans    &trans  &td_sp_n       &trans         &trans         &trans         &inv_ques      &trans
+                             &trans    &trans    &trans    &trans     &trans    &trans  &trans         &trans         &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
