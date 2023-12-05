@@ -1237,6 +1237,24 @@
 
             label = "PRINTSCREEN";
         };
+
+        pastePowerpoint: pastePowerpoint {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_tap>,
+                <&kp T>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PASTEPOWERPOINT";
+        };
     };
 };
 
@@ -1763,6 +1781,14 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LGUI>, <&cad>;
+        };
+
+        pasteTextWordPower: pasteTextWordPower {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PASTETEXTWORDPOWER";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RS(RC(LEFT_ALT))>, <&pastePowerpoint>;
         };
     };
 
