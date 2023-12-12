@@ -1932,11 +1932,11 @@ LED_COLOR_ID_GREEN
 
             label = "Gaeilge  VuNT";
             bindings = <
-&ext_power EP_ON   &inv_exc  &degree   &lb_euro  &us_cent  &plus_min                    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
-&ext_power EP_OFF  &trans    &trans    &td_sp_e  &trans    &trans                       &trans         &td_sp_u       &fada_i        &td_sp_o       &trans         &trans
-&bt BT_DISC 0      &td_sp_a  &td_sp_s  &trans    &trans    &trans                       &trans         &trans         &trans         &dark_l        &trans         &trans
-&bt BT_DISC 1      &td_sp_z  &trans    &acute_c  &trans    &trans     &trans    &trans  &td_sp_n       &trans         &trans         &trans         &inv_ques      &trans
-                             &trans    &trans    &trans    &trans     &trans    &trans  &trans         &trans         &trans         &trans
+&kp RS(F1)         &kp RS(F2)        &kp RS(F3)  &kp RS(F4)  &us_cent  &plus_min                    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
+&ext_power EP_OFF  &ext_power EP_ON  &trans      &td_sp_e    &trans    &trans                       &trans         &td_sp_u       &fada_i        &td_sp_o       &trans         &trans
+&bt BT_DISC 0      &td_sp_a          &td_sp_s    &trans      &trans    &trans                       &trans         &trans         &trans         &dark_l        &trans         &trans
+&bt BT_DISC 1      &td_sp_z          &trans      &acute_c    &trans    &trans     &trans    &trans  &td_sp_n       &trans         &trans         &trans         &inv_ques      &trans
+                                     &trans      &trans      &trans    &trans     &trans    &trans  &trans         &trans         &trans         &trans
             >;
 
             sensor-bindings = <&rgb_encoder>, <&inc_dec_kp C_VOL_UP C_VOL_DN>;
