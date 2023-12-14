@@ -1800,6 +1800,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp SPACE>, <&kp ENTER>;
         };
+
+        prinScreenWindows: prinScreenWindows {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PRINSCREENWINDOWS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&printScreen>, <&kp LA(PRINTSCREEN)>;
+        };
     };
 
     keymap {
