@@ -1793,12 +1793,12 @@
             bindings = <&kp RS(RC(V))>, <&pastePowerpoint>;
         };
 
-        ShiftEnter: ShiftEnter {
+        SpaceEnter: SpaceEnter {
             compatible = "zmk,behavior-tap-dance";
-            label = "SHIFTENTER";
+            label = "SPACEENTER";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_SHIFT>, <&kp ENTER>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
         };
 
         snipPrintScreenWindows: snipPrintScreenWindows {
@@ -1827,7 +1827,7 @@
 &kp TAB         &kp Q   &kp W         &kp E                &kp R                    &kp T                              &kp Y   &kp U      &kp I             &kp O              &kp P     &kp DELETE
 &kp LEFT_SHIFT  &kp A   &kp S         &kp D                &kp F                    &kp G                              &kp H   &kp J      &kp K             &kp L              &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z   &kp X         &kp C                &kp V                    &kp B   &close_tab     &kp K_MUTE  &kp N   &kp M      &kp COMMA         &kp DOT            &kp FSLH  &kp RETURN
-                        &kp LEFT_ALT  &pasteTextWordPower  &snipPrintScreenWindows  &mo 1   &ShiftEnter    &kp SPACE   &mo 2   &lwin_cad  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                        &kp LEFT_ALT  &pasteTextWordPower  &snipPrintScreenWindows  &mo 1   &SpaceEnter    &kp SPACE   &mo 2   &lwin_cad  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings =
