@@ -1889,7 +1889,7 @@
 
             label = "G  VuNT";
             bindings = <
-&kp RS(F1)         &kp RS(F2)        &kp RS(F3)  &kp RS(F4)  &us_cent  &plus_min                    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
+&kp RS(F1)         &kp RS(F2)        &kp RS(F3)  &kp RS(F4)  &us_cent  &plus_min                    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR_ALL
 &ext_power EP_OFF  &ext_power EP_ON  &trans      &td_sp_e    &trans    &trans                       &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &trans
 &bt BT_DISC 0      &td_sp_a          &td_sp_s    &trans      &trans    &trans                       &trans         &trans         &trans         &dark_l        &trans         &trans
 &bt BT_DISC 1      &td_sp_z          &trans      &acute_c    &trans    &trans     &trans    &trans  &td_sp_n       &trans         &trans         &trans         &inv_ques      &trans
