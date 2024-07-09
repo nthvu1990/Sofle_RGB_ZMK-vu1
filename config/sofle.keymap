@@ -1844,11 +1844,11 @@
 
             label = "L  VuNT";
             bindings = <
-&kp F1      &kp F2         &kp F3           &kp F4       &kp F5            &kp F6                          &kp F7     &kp F18  &kp F9  &kp F10  &kp F11       &kp F12
-&tab_left   &kp PAGE_UP    &kp INS          &kp UP       &kp AT            &kp PRCNT                       &kp PLUS   &kp N7   &kp N8  &kp N9   &kp ASTERISK  &kp PIPE
-&tab_right  &kp PAGE_DOWN  &kp LEFT         &kp DOWN     &kp RIGHT         &kp DLLR                        &kp MINUS  &kp N4   &kp N5  &kp N6   &kp SLASH     &kp BSLH
-&close_tab  &out OUT_TOG   &selectLeftWord  &selectUp    &selectRightWord  &kp HASH   &kp A      &kp B     &kp EQUAL  &kp N1   &kp N2  &kp N3   &kp KP_ENTER  &kp EQUAL
-                           &selectLeft      &selectDown  &selectRight      &trans     &kp TAB    &kp CAPS  &mo 3      &trans   &kp N0  &kp DOT
+&kp F1          &kp F2         &kp F3           &kp F4       &kp F5            &kp F6                          &kp F7     &kp F18  &kp F9  &kp F10  &kp F11       &kp F12
+&tab_left       &kp PAGE_UP    &kp INS          &kp UP       &kp AT            &kp PRCNT                       &kp PLUS   &kp N7   &kp N8  &kp N9   &kp ASTERISK  &kp PIPE
+&kp LEFT_SHIFT  &kp PAGE_DOWN  &kp LEFT         &kp DOWN     &kp RIGHT         &kp DLLR                        &kp MINUS  &kp N4   &kp N5  &kp N6   &kp SLASH     &kp BSLH
+&kp RCTRL       &out OUT_TOG   &selectLeftWord  &selectUp    &selectRightWord  &kp HASH   &kp A      &kp B     &kp EQUAL  &kp N1   &kp N2  &kp N3   &kp KP_ENTER  &kp EQUAL
+                               &selectLeft      &selectDown  &selectRight      &trans     &kp TAB    &kp CAPS  &mo 3      &trans   &kp N0  &kp DOT
             >;
 
             sensor-bindings =
